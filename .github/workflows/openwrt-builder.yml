@@ -33,12 +33,6 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-      - name: Create swapfile at start
-         run: |
-          sudo fallocate -l 2G /swapfile
-          sudo chmod 600 /swapfile
-          sudo mkswap /swapfile
-          sudo swapon /swapfile
     - name: Checkout
       uses: actions/checkout@main
 
